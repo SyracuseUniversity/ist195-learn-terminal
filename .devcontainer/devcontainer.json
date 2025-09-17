@@ -1,0 +1,13 @@
+{
+  "name": "IST195 Codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/apt-packages:1": {
+      "packages": "sl cowsay fortune-mod telnet figlet"
+    }
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/usr/games"
+  },
+  "postCreateCommand": "cowsay 'IST195 is ready!' || true"
+}
